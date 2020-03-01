@@ -20,7 +20,7 @@
         position: relative;
         left: auto; } }
     .site-navbar .site-logo a {
-      color: #fff;
+      color:black;
       font-size: 1.5rem;
       letter-spacing: .2rem;
       text-transform: uppercase; }
@@ -34,7 +34,7 @@
         position: relative;
         right: auto; } }
   .site-navbar .site-menu-toggle {
-    color: #fff;
+    color: #1c2f5e;
     line-height: 0;
     font-size: 2.5rem;
     position: relative; }
@@ -51,7 +51,7 @@
     .site-navbar .site-navigation .site-menu {
       margin-bottom: 0; }
       .site-navbar .site-navigation .site-menu .active {
-        color: #fff;
+        color:#1c2f5e;
         display: inline-block;
         padding: 5px 20px; }
       .site-navbar .site-navigation .site-menu a {
@@ -62,7 +62,7 @@
         display: inline-block; }
         .site-navbar .site-navigation .site-menu > li > a {
           padding: 20px 20px !important;
-          color: rgba(255, 255, 255, 0.5);
+          color: black;
           display: inline-block;
           text-decoration: none !important; }
           .site-navbar .site-navigation .site-menu > li > a:hover {
@@ -853,7 +853,7 @@ h1, h2, h3, h4 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); }
+    /* background: rgba(0, 0, 0, 0.5); } */
 
 .section-hero.overlay-2:before {
    }
@@ -921,9 +921,9 @@ h1, h2, h3, h4 {
     border-color: #90c317; }
 
 .btn.btn-outline-white {
-  background: transparent;
+  background: #1c2f5e;
   border-width: 2px;
-  border-color: #fff;
+  border-color:#1c2f5e;
   color: #fff; }
   .btn.btn-outline-white:hover {
     background: #fff;
