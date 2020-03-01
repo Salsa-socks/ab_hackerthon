@@ -428,7 +428,7 @@ body {
       visibility: visible; }
 
 h1, h2, h3, h4 {
-  color: #000; }
+  color: #000 !important; }
 
 .site-section {
   padding-top: 7rem;
@@ -856,7 +856,7 @@ h1, h2, h3, h4 {
     background: rgba(0, 0, 0, 0.5); }
 
 .section-hero.overlay-2:before {
-  background: rgba(125, 131, 132, 0.95); }
+   }
 
 .section-hero > .container {
   z-index: 2;
