@@ -1,6 +1,13 @@
 <?php
 //aotoloD
-require_once __DIR__.'/vendor/autoload';
+require_once '../database/database.php';
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 session_start();
 $Team_name = $_POST['Team_name'];
@@ -19,6 +26,14 @@ $member3_name = $_POST['3rd_name'];
 $member3_surname = $_POST['3rd_surname']; 
 $member3_email = $_POST['3rd_email'];
 
+$teamInfo = array(
+'team_name' => $Team_name, 
+'member 1' => ['name' => $member1_name, 'surname' => $member1_surname, 'email' => $member1_email],
+'member 2' => ['name' => $member2_name, 'surname' => $member2_surname, 'email' => $member2_email],
+'member 3' => ['name' => $member3_name, 'surname' => $member3_surname, 'email' => $member3_email]
+);
+
+$database = new Database();
 
 if (strlen($Password < 6))
 {
@@ -26,34 +41,36 @@ if (strlen($Password < 6))
     header("Location: ../register.php");
 }
 
-else if (!($Password == $Re_password))
+if (!($Password == $Re_password))
 {
     $_SESSION['error'] = "Passwords do not match";   
     header("Location: ../register.php");
 }
 
-else if(!filter_var($member1_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member1_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "1st Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
 }
 
-else if(!filter_var($member2_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member2_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "2nd Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
 }
 
-else if(!filter_var($member3_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member3_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "3rd Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
 }
 
-else
+if ($member1_name && $member2_name && $member3_name)
 {
-    echo "waiting for database guys";
+    var_dump('Inserting user info into Datatbase');
+    $database->insert($teamInfo);
 }
+
 // echo $Team_name."\n";
 // echo $Password."\n";
 
