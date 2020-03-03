@@ -1,4 +1,6 @@
 <?php
+//aotoloD
+require_once __DIR__.'/vendor/autoload';
 
 session_start();
 $Team_name = $_POST['Team_name'];

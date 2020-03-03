@@ -1,0 +1,7 @@
+{
+    "name": "jury/ab_hackerthon",
+    "description": "Registering for game",
+    "require": {
+        "kreait/firebase-php": "4.35"
+    }
+}
