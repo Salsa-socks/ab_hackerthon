@@ -1,13 +1,6 @@
 <?php
 //aotoloD
-require_once '../database/database.php';
-
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
+require_once '../database.php';
 
 session_start();
 $Team_name = $_POST['Team_name'];
@@ -28,18 +21,16 @@ $member3_email = $_POST['3rd_email'];
 
 $teamInfo = array(
 'team_name' => $Team_name, 
-'member 1' => ['name' => $member1_name, 'surname' => $member1_surname, 'email' => $member1_email],
-'member 2' => ['name' => $member2_name, 'surname' => $member2_surname, 'email' => $member2_email],
-'member 3' => ['name' => $member3_name, 'surname' => $member3_surname, 'email' => $member3_email]
+'member1' => ['name' => $member1_name, 'surname' => $member1_surname, 'email' => $member1_email],
+'member2' => ['name' => $member2_name, 'surname' => $member2_surname, 'email' => $member2_email],
+'member3' => ['name' => $member3_name, 'surname' => $member3_surname, 'email' => $member3_email]
 );
 
-$database = new Database();
-
-if (strlen($Password < 6))
+/*if (strlen($Password) >= 6)
 {
     $_SESSION['error'] = "Password too short";
     header("Location: ../register.php");
-}
+}*/
 
 if (!($Password == $Re_password))
 {
@@ -67,8 +58,8 @@ if(!filter_var($member3_email, FILTER_VALIDATE_EMAIL))
 
 if ($member1_name && $member2_name && $member3_name)
 {
-    var_dump('Inserting user info into Datatbase');
-    $database->insert($teamInfo);
+    echo 'Inserting user info into Datatbase';
+    db_insert($teamInfo);
 }
 
 // echo $Team_name."\n";
