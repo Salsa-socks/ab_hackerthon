@@ -57,14 +57,14 @@ session_start();
               <li><a href="contact.html">Contact</a></li>
               <li><a href="about.html">About</a></li>
               <li class="d-lg-none"><a href="scoreboard.html"><span class="mr-2"></span>Scoreboard</a></li>
-              <li class="d-lg-none" class="nav-link active"><a href="login.html">Log In</a></li>
+              <li class="d-lg-none" class="nav-link active"><a href="register.php">register Team</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
               <a href="scoreboard.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
+              <a href="register.php" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>register Team</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -103,14 +103,6 @@ session_start();
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="fname">Team Name</label>
                   <input type="text" id="Tname" class="form-control" placeholder="Team Name" name="Team_name" required>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Password  (Minimum of 6 characters)</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Password" name="Password" required>
-                  <input type="password" id="fname" class="form-control" placeholder="Re-type Password" name="Re_password" required>
                 </div>
               </div>
 

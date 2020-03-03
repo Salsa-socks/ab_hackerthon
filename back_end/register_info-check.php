@@ -2,8 +2,6 @@
 
 session_start();
 $Team_name = $_POST['Team_name'];
-$Password = $_POST['Password'];
-$Re_password = $_POST['Re_password'];
 
 $member1_name = $_POST['1st_name']; 
 $member1_surname = $_POST['1st_surname']; 
@@ -17,58 +15,56 @@ $member3_name = $_POST['3rd_name'];
 $member3_surname = $_POST['3rd_surname']; 
 $member3_email = $_POST['3rd_email'];
 
-
-if (strlen($Password < 6))
+if ((isset($_POST['4th_name'])) && (isset($_POST['4th_surname'])) && (isset($_POST['4th_email'])))
 {
-    $_SESSION['error'] = "Password too short";
-    header("Location: ../register.php");
+    $member4_name = $_POST['4th_name'];
+    $member4_surname = $_POST['4th_surname'];
+    $member4_email = $_POST['4th_email'];
 }
 
-else if (!($Password == $Re_password))
+if ((isset($_POST['5th_name'])) && (isset($_POST['5th_surname'])) && (isset($_POST['5th_email'])))
 {
-    $_SESSION['error'] = "Passwords do not match";   
-    header("Location: ../register.php");
+    $member5_name = $_POST['5th_name'];
+    $member5_surname = $_POST['5th_surname'];
+    $member5_email = $_POST['5th_email'];
 }
 
-else if(!filter_var($member1_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member1_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "1st Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
+    return;
 }
 
-else if(!filter_var($member2_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member2_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "2nd Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
+    return;
 }
 
-else if(!filter_var($member3_email, FILTER_VALIDATE_EMAIL))
+if(!filter_var($member3_email, FILTER_VALIDATE_EMAIL))
 {
     $_SESSION['error'] = "3rd Members' email is invalid, please enter a proper email";
     header("Location: ../register.php");
+    return;
 }
 
-else
+if(!filter_var($member4_email, FILTER_VALIDATE_EMAIL))
 {
-    echo "waiting for database guys";
+    $_SESSION['error'] = "4th Members' email is invalid, please enter a proper email";
+    header("Location: ../register.php");
+    return;
 }
-// echo $Team_name."\n";
-// echo $Password."\n";
 
-// echo $member1_name."\n";
-// echo $member1_surname."\n";
-// echo $member1_email."\n";
-// echo $member2_name."\n";
-// echo $member2_surname."\n";
-// echo $member2_email."\n";
-// echo $member3_name."\n";
-// echo $member3_surname."\n";
-// echo $member3_email."\n";
-// if (isset($member4_name))
-// {
-//     echo $member4_name."\n";
-//     echo $member4_surname."\n";
-//     echo $member4_email."\n";
-// }
+if(!filter_var($member5_email, FILTER_VALIDATE_EMAIL))
+{
+    $_SESSION['error'] = "5th Members' email is invalid, please enter a proper email";
+    header("Location: ../register.php");
+    return;
+}
+
+echo "waiting for database guys";
+
 
 ?>
