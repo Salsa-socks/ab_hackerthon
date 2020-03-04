@@ -108,14 +108,6 @@ session_start();
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
-                  <label class="text-black" for="fname">Password  (Minimum of 6 characters)</label>
-                  <input type="password" id="fname" class="form-control" placeholder="Password" name="Password" required>
-                  <input type="password" id="fname" class="form-control" placeholder="Re-type Password" name="Re_password" required>
-                </div>
-              </div>
-
-              <div class="row form-group">
-                <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="fname">1st Member</label>
                   <input type="text" id="fname" class="form-control" placeholder="First name" name="1st_name" required>
                   <input type="text" id="sname" class="form-control" placeholder="Surname" name="1st_surname" required>
