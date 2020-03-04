@@ -33,8 +33,12 @@ function db_insert(array $array)
         var_dump('Succesfully inserted data!');
 }
 
-function db_retrieve_teams() {
+function db_retrieve_teams($reference) {
+    $factory = new Factory();
+    $database = $factory->withServiceAccount(__DIR__.'/secret/practice-f9c1b-067f82e56870.json')->createDatabase();        
+    $snap = $database->getReference($reference)->getValue();
 
+    return $snap;
 }
 
 function db_retrieve_team_item ()
@@ -42,7 +46,7 @@ function db_retrieve_team_item ()
 
 }
 
-function db_retrieve($reference, $team_name) 
+function db_retrieve_team($reference, $team_name) 
 {
     $factory = new Factory();
     $database = $factory->withServiceAccount(__DIR__.'/secret/practice-f9c1b-067f82e56870.json')->createDatabase();        
@@ -60,6 +64,6 @@ function db_retrieve($reference, $team_name)
             }
         }
     }
-    return $snap;
+    return $team;
 }
 ?>

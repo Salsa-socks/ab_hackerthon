@@ -138,8 +138,9 @@ if ($member1_name && $member2_name && $member3_name)
     $teamInfo = db_structure($Team_name, $member_1, $member_2, $member_3, $member_4, $member_5);
     //print_r($teamInfo);
     db_insert($teamInfo);
-    $team = db_retrieve('Teams', 'Fire');
-    print_r($team);
+    //$team = db_retrieve('Teams', 'Fire');
+    //print_r($team);
+    header ("Location: http://localhost/ab_hackerthon/scoreboard.php");
 }
 
 // echo $Team_name."\n";
