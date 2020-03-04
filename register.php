@@ -57,6 +57,7 @@ session_start();
               <li><a href="contact.html">Contact</a></li>
               <!-- <li><a href="about.html">About</a></li> -->
               <li class="d-lg-none"><a href="scoreboard.html"><span class="mr-2"></span>Scoreboard</a></li>
+              <li class="d-lg-none"><a href="register.php" class="nav-link active"><span class="mr-2"></span>Sign Up</a></li>
             </ul>
           </nav>
           
