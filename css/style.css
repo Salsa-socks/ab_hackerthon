@@ -63,7 +63,7 @@
       margin-bottom: 0; }
       .site-navbar .site-navigation .site-menu .active {
         color: #1e9ff2;
-        display: inline-block;
+        /* display: inline-block; */
         padding: 5px 20px; }
       .site-navbar .site-navigation .site-menu a {
         text-decoration: none !important;
@@ -855,7 +855,8 @@ h1, h2, h3, h4 {
   padding-bottom: 3em; }
 
 .section-hero.overlay, .section-hero.overlay-2 {
-  position: relative; }
+  position: relative; 
+}
   .section-hero.overlay:before, .section-hero.overlay-2:before {
     z-index: 1;
     position: absolute;

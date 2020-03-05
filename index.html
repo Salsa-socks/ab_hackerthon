@@ -20,10 +20,11 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">    
   </head>
-  <body id="top">
-    
+
+  <body id="top">  
     <div class="site-wrap">
-      
+
+      <!-- SIDE-MENU BAR -->
       <div class="site-mobile-menu site-navbar-target">
         <div class="site-mobile-menu-header" style="background-color: #002b60;height: 60px;">
           <div style="display: flex; margin:0px;">
@@ -36,13 +37,15 @@
         </div>
         <div class="mobile-menu-body">
           <ul class="mobile-side-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="challenges.html">Challenges</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="scoreboard.html">Scoreboard</a></li>
+            <li class="side-menu-links"><a href="index.html">Home</a></li>
+            <li class="side-menu-links"><a href="challenges.html">Challenges</a></li>
+            <li class="side-menu-links"><a href="contact.html">Contact</a></li>
+            <li class="side-menu-links"><a href="scoreboard.html">Scoreboard</a></li>
+            <li class="side-menu-links"><a href="register.php">Sign Up</a></li>
           </ul>
+        </div>
       </div>
-      </div>
+      <!-- END OF SIDE-MENU BAR -->
       
       <!-- NAVBAR -->
       <div class="navBar">
@@ -72,7 +75,8 @@
               
               <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
                 <div class="ml-auto">
-                  <a href="scoreboard.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
+                  <a href="scoreboard.html" class="scoreboard-btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
+                  <button class="signup-btn"><a href="register.php" style="color: whitesmoke;"><span class="mr-2"></span>Sign Up</a></button>
                 </div>
                 <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
               </div>
@@ -81,74 +85,75 @@
           </div>
         </header>
       </div>
-      
-    <!-- HOME -->
-    <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-12">
-            <div class="mb-5 text-center">
-              <!--<h1 class="text-black font-weight-bold">Ctrl Alt Compete</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p> -->
+      <!-- END OF NAVBAR -->
+    
+      <!-- HOME -->
+      <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+              <div class="mb-5 text-center">
+                <!--<h1 class="text-black font-weight-bold">Ctrl Alt Compete</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p> -->
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <a href="#next" class="scroll-button smoothscroll">
-        <span class=" icon-keyboard_arrow_down"></span>
-      </a>
-    </section>
-    
-    <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2 text-white">Ctrl Alt Compete</h2>
-            <p class="lead text-white">The African Bank’s Ctrl Alt Compete challenges began in July 2019 among smaller teams in IT. This year, the Omni Development team has decided to spread the challenge and invite all African Bankers to take part in the fun!</p>
+        <a href="#next" class="scroll-button smoothscroll">
+          <span class=" icon-keyboard_arrow_down"></span>
+        </a>
+      </section>
+      
+      <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2 text-white">Ctrl Alt Compete</h2>
+              <p class="lead text-white">The African Bank’s Ctrl Alt Compete challenges began in July 2019 among smaller teams in IT. This year, the Omni Development team has decided to spread the challenge and invite all African Bankers to take part in the fun!</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="site-section">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2">What's a Hackathon??</h2>
-            <p>A hackathon is an event, usually hosted by a tech company or organisation (in our case a department), where programmers and other people get together for a short period of time to collaborate on a project or tasks usually around problem solving by means of computer programming. With Ctrl Alt Compete, you don’t need to be a computer programmer! J This competition is for everyone.</p>
+      <section class="site-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2">What's a Hackathon??</h2>
+              <p>A hackathon is an event, usually hosted by a tech company or organisation (in our case a department), where programmers and other people get together for a short period of time to collaborate on a project or tasks usually around problem solving by means of computer programming. With Ctrl Alt Compete, you don’t need to be a computer programmer! J This competition is for everyone.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h2 class="text-white">Looking to compete?</h2>
-            <p class="mb-0 text-white lead">What are you waiting for!? Click the button to register and sign up!</p>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <a href="register.php" class="btn btn-warning btn-block btn-lg">Sign Up</a>
+      <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="text-white">Looking to compete?</h2>
+              <p class="mb-0 text-white lead">What are you waiting for!? Click the button to register and sign up!</p>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <a href="register.php" class="btn btn-warning btn-block btn-lg">Sign Up</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="site-section py-4">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-12 text-center mt-4 mb-5">
-            <div class="row justify-content-center">
-              <div class="col-md-7">
-                <h2 class="section-title mb-2">What's up for grabs?!</h2>
-                <p class="lead">Wireless headphones, Bluetooth speakers and more! Keep an eye on this space….</p>
-              </div>
-            </div>    
-          </div>
-    </section>
+      <section class="site-section py-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 text-center mt-4 mb-5">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <h2 class="section-title mb-2">What's up for grabs?!</h2>
+                  <p class="lead">Wireless headphones, Bluetooth speakers and more! Keep an eye on this space….</p>
+                </div>
+              </div>    
+            </div>
+      </section>
 
-    <section class="bg-light pt-5 testimony-full">    
+      <section class="bg-light pt-5 testimony-full">    
         <div class="owl-carousel single-carousel">
           <div class="container">
             <div class="row">
@@ -188,7 +193,9 @@
           </div>
         </div>
       </section>
-    
+      <!-- END OF HOME -->
+
+    <!-- FOOTER -->
       <footer class="site-footer">   
         <a href="#top" class="smoothscroll scroll-top">
           <span class="icon-keyboard_arrow_up"></span>
@@ -201,10 +208,10 @@
           </div>
         </div>
       </footer>
+      <!-- END OF FOOTER -->
     </div>
   
-
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS -->    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
