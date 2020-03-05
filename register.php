@@ -55,16 +55,15 @@ session_start();
               <li><a href="index.html" >Home</a></li>
               <li><a href="challenges.html">Challenges</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
+              <!-- <li><a href="about.html">About</a></li> -->
               <li class="d-lg-none"><a href="scoreboard.html"><span class="mr-2"></span>Scoreboard</a></li>
-              <li class="d-lg-none" class="nav-link active"><a href="login.html">Log In</a></li>
+              <li class="d-lg-none"><a href="register.php" class="nav-link active"><span class="mr-2"></span>Sign Up</a></li>
             </ul>
           </nav>
           
           <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
             <div class="ml-auto">
               <a href="scoreboard.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
-              <a href="login.html" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
             </div>
             <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
           </div>
@@ -84,6 +83,10 @@ session_start();
 
     <section class="site-section">
       <div class="container">
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:register.php
+>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5
         <?php
           if (isset($_SESSION['error']))
           {?>
@@ -98,6 +101,15 @@ session_start();
           <div class="col-lg-6 mb-5">
             <h2 class="mb-4">Sign Your Team Up</h2>
             <form method="post" action="back_end/register_info-check.php" class="p-4 border rounded">
+<<<<<<< HEAD
+=======
+========
+        <div class="row mb-5 justify-content-center">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Log in</h2>
+            <form action="#" class="p-4 border rounded">
+>>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5:login.html
+>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
@@ -105,8 +117,17 @@ session_start();
                   <input type="text" id="Tname" class="form-control" placeholder="Team Name" name="Team_name" required>
                 </div>
               </div>
+<<<<<<< HEAD
 
               <div class="row form-group">
+=======
+<<<<<<<< HEAD:register.php
+
+              <div class="row form-group">
+========
+              <div class="row form-group mb-4">
+>>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5:login.html
+>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5
                 <div class="col-md-12 mb-3 mb-md-0">
                   <label class="text-black" for="fname">1st Member</label>
                   <input type="text" id="fname" class="form-control" placeholder="First name" name="1st_name" required>
@@ -114,6 +135,10 @@ session_start();
                   <input type="text" id="email" class="form-control" placeholder="Email" name="1st_email" required>
                 </div>
               </div>
+<<<<<<< HEAD
+=======
+<<<<<<<< HEAD:register.php
+>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5
 
               <div class="row form-group">
                 <div class="col-md-12 mb-3 mb-md-0">
@@ -154,9 +179,30 @@ session_start();
               <div class="row form-group">
                 <div class="col-md-12">
                   <input type="submit" value="Sign Up" class="btn px-4 btn-primary text-white">
+<<<<<<< HEAD
                 </div>
               </div>
 
+=======
+========
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Log In" class="btn px-4 btn-primary text-white">
+                </div>
+              </div>
+            </form>
+            <form action="register.html" class="p-4 border rounded">
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label class="text-black">Don't have an account?</label>
+                  <a href="register.html">
+                    <button class="btn px-4 btn-primary text-white">Register</button>
+                  </a>
+>>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5:login.html
+                </div>
+              </div>
+>>>>>>> 8101c0a5a9dff5f5a73f6191a1bf3f14c93f27e5
             </form>
           </div>
         </div>
