@@ -24,10 +24,10 @@
       arsort($team_collection);
       }
 ?>
-    <table style="width:100%;">
+    <table style="width:100%;font-size:25px">
     <tr>
-      <td>TEAM</td>
-      <td>POINTS</td>
+        <td class="font-weight-bold">TEAM NAME</td>
+        <td class="font-weight-bold">POINTS</td>
     </tr>
     <?php
     if ($array_count > 0)
@@ -41,6 +41,10 @@
     </tr>
     <?php
       }
+    }
+    else
+    {
+      echo "Coming soon...";
     }
     ?>
   </table>
