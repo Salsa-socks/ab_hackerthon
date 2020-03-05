@@ -68,7 +68,7 @@
             {
                 setTimeout( function() {
                 $('#live_score').load('live_score.php');
-                refresh(); }, 1000);
+                refresh(); }, 3000);
             }
         </script>
 <body>
