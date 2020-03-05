@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Free-Template.co" />
-    <link rel="shortcut icon" href="ftco-32x32.png">
-    
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/custom-bs.css">
     <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/bootstrap-select.min.css">
@@ -17,134 +15,146 @@
     <link rel="stylesheet" href="fonts/line-icons/style.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/navbar.css">
 
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="css/style.css">    
   </head>
-  <body id="top">
 
-  <div id="overlayer"></div>
-  <div class="loader">
-    <div class="spinner-border text-primary" role="status">
-      <span class="sr-only">Loading...</span>
-    </div>
-  </div>
-    
+  <body id="top">  
+    <div class="site-wrap">
 
-<div class="site-wrap">
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
-        </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-    
-
-    <!-- NAVBAR -->
-    <header class="site-navbar mt-3">
-      <div class="container-fluid">
-        <div class="row align-items-center">
-          <div class="site-logo col-6"><a href="index.html"><img src="images\cac_logo_words.png" style="width: 40%"></a></div>
-
-          <nav class="mx-auto site-navigation">
-            <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-              <li><a href="index.html" class="nav-link active">Home</a></li>
-              <li><a href="challenges.html">Challenges</a></li>
-              <li><a href="contact.html">Contact</a></li>
-              <li><a href="about.html">About</a></li>
-              <li class="d-lg-none"><a href="scoreboard.php"><span class="mr-2"></span>Scoreboard</a></li>
-              <li class="d-lg-none"><a href="login.php">Log In</a></li>
-            </ul>
-          </nav>
-          
-          <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
-            <div class="ml-auto">
-              <a href="scoreboard.html" class="btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
-              <a href="login.php" class="btn btn-primary border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-lock_outline"></span>Log In</a>
-            </div>
-            <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- HOME -->
-    <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
-      <div class="container">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-md-12">
-            <div class="mb-5 text-center">
-              <!--<h1 class="text-black font-weight-bold">Ctrl Alt Compete</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p> -->
+      <!-- SIDE-MENU BAR -->
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header" style="background-color: #002b60;height: 60px;">
+          <div style="display: flex; margin:0px;">
+            <div class="mt-3" style="float:right; width:50%;"><img src="images\cac_logo_words.png" style="width: 200px;"></div>
+            <div class="site-mobile-menu-close mt-3" style="float:right; width:50%;">
+              <span class="icon-close2 js-menu-toggle" style="float:right;">
+              </span>
             </div>
           </div>
         </div>
-      </div>
-
-      <a href="#next" class="scroll-button smoothscroll">
-        <span class=" icon-keyboard_arrow_down"></span>
-      </a>
-
-    </section>
-    
-    <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2 text-white">Filler heading and stuff</h2>
-            <p class="lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde officiis recusandae sequi excepturi corrupti.</p>
-          </div>
+        <div class="mobile-menu-body">
+          <ul class="mobile-side-menu">
+            <li class="side-menu-links"><a href="index.html">Home</a></li>
+            <li class="side-menu-links"><a href="challenges.html">Challenges</a></li>
+            <li class="side-menu-links"><a href="contact.html">Contact</a></li>
+            <li class="side-menu-links"><a href="scoreboard.html">Scoreboard</a></li>
+            <li class="side-menu-links"><a href="register.php">Sign Up</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+      <!-- END OF SIDE-MENU BAR -->
+      
+      <!-- NAVBAR -->
+      <div class="navBar">
 
-    <section class="site-section">
-      <div class="container">
-
-        <div class="row mb-5 justify-content-center">
-          <div class="col-md-7 text-center">
-            <h2 class="section-title mb-2">African Bank</h2>
+        <div id="overlayer"></div>
+        <div class="loader">
+          <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
           </div>
         </div>
 
-    </section>
+        <header class="site-navbar mt-3">
+          <div class="container-fluid">
+            <div class="row align-items-center">
+              <div class="site-logo col-6"><a href="index.html"><img src="images\cac_logo_words.png" class="ab_logo"></a></div>
 
-    <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-8">
-            <h2 class="text-white">Looking to compete?</h2>
-            <p class="mb-0 text-white lead">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
-          </div>
-          <div class="col-md-3 ml-auto">
-            <a href="#" class="btn btn-warning btn-block btn-lg">Sign Up</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <section class="site-section py-4">
-      <div class="container">
-  
-        <div class="row align-items-center">
-          <div class="col-12 text-center mt-4 mb-5">
-            <div class="row justify-content-center">
-              <div class="col-md-7">
-                <h2 class="section-title mb-2">What's up for grabs?!</h2>
-                <p class="lead">Porro error reiciendis commodi beatae omnis similique voluptate rerum ipsam fugit mollitia ipsum facilis expedita tempora suscipit iste</p>
+              <nav class="mx-auto site-navigation">
+                <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
+                  <li><a href="index.html" class="nav-link active">Home</a></li>
+                  <li><a href="challenges.html">Challenges</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <!-- <li><a href="about.html">About</a></li> -->
+                  <li class="d-lg-none"><a href="scoreboard.html"><span class="mr-2"></span>Scoreboard</a></li>
+                  <li class="d-lg-none"><a href="register.php"><span class="mr-2"></span>Sign Up</a></li>
+                </ul>
+              </nav>
+              
+              <div class="right-cta-menu text-right d-flex aligin-items-center col-6">
+                <div class="ml-auto">
+                  <a href="scoreboard.html" class="scoreboard-btn btn-outline-white border-width-2 d-none d-lg-inline-block"><span class="mr-2 icon-add"></span>Scoreboard</a>
+                  <button class="signup-btn"><a href="register.php" style="color: whitesmoke;"><span class="mr-2"></span>Sign Up</a></button>
+                </div>
+                <a href="#" class="site-menu-toggle js-menu-toggle d-inline-block d-xl-none mt-lg-2 ml-3"><span class="icon-menu h3 m-0 p-0 mt-2"></span></a>
               </div>
-            </div>    
-          </div>
-    </section>
-    <section class="bg-light pt-5 testimony-full">
-        
-        <div class="owl-carousel single-carousel">
 
-        
+            </div>
+          </div>
+        </header>
+      </div>
+      <!-- END OF NAVBAR -->
+    
+      <!-- HOME -->
+      <section class="home-section section-hero overlay bg-image" style="background-image: url('images/hero_1.jpg');" id="home-section">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-12">
+              <div class="mb-5 text-center">
+                <!--<h1 class="text-black font-weight-bold">Ctrl Alt Compete</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate est, consequuntur perferendis.</p> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#next" class="scroll-button smoothscroll">
+          <span class=" icon-keyboard_arrow_down"></span>
+        </a>
+      </section>
+      
+      <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2 text-white">Ctrl Alt Compete</h2>
+              <p class="lead text-white">The African Bank’s Ctrl Alt Compete challenges began in July 2019 among smaller teams in IT. This year, the Omni Development team has decided to spread the challenge and invite all African Bankers to take part in the fun!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section">
+        <div class="container">
+          <div class="row mb-5 justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2">What's a Hackathon??</h2>
+              <p>A hackathon is an event, usually hosted by a tech company or organisation (in our case a department), where programmers and other people get together for a short period of time to collaborate on a project or tasks usually around problem solving by means of computer programming. With Ctrl Alt Compete, you don’t need to be a computer programmer! J This competition is for everyone.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <h2 class="text-white">Looking to compete?</h2>
+              <p class="mb-0 text-white lead">What are you waiting for!? Click the button to register and sign up!</p>
+            </div>
+            <div class="col-md-3 ml-auto">
+              <a href="register.php" class="btn btn-warning btn-block btn-lg">Sign Up</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section py-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 text-center mt-4 mb-5">
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <h2 class="section-title mb-2">What's up for grabs?!</h2>
+                  <p class="lead">Wireless headphones, Bluetooth speakers and more! Keep an eye on this space….</p>
+                </div>
+              </div>    
+            </div>
+      </section>
+
+      <section class="bg-light pt-5 testimony-full">    
+        <div class="owl-carousel single-carousel">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 align-self-center text-center text-lg-left">
@@ -170,39 +180,38 @@
               </div>
             </div>
           </div>
+        </div>
+      </section>
 
-      </div>
-
-    </section>
-
-    <section class="pt-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
-            <h2 class="text-white">Further info filler</h2>
-            <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+      <section class="pt-5 bg-image overlay-primary fixed overlay" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 align-self-center text-center text-md-left mb-5 mb-md-0">
+              <h2 class="text-white">Further info filler</h2>
+              <p class="mb-5 lead text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit tempora adipisci impedit.</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    
-    <footer class="site-footer">
+      </section>
+      <!-- END OF HOME -->
 
-      <a href="#top" class="smoothscroll scroll-top">
-        <span class="icon-keyboard_arrow_up"></span>
-      </a>
+    <!-- FOOTER -->
+      <footer class="site-footer">   
+        <a href="#top" class="smoothscroll scroll-top">
+          <span class="icon-keyboard_arrow_up"></span>
+        </a>
         <div class="row text-center">
           <div class="col-12">
             <p class="copyright"><small>
-            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://www.africanbank.co.za/" target="_blank" >African Bank</a></small></p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made by <a href="https://www.africanbank.co.za/" target="_blank" >African Bank</a></small></p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <!-- END OF FOOTER -->
+    </div>
   
-  </div>
-
-    <!-- SCRIPTS -->
+    <!-- SCRIPTS -->    
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/isotope.pkgd.min.js"></script>
@@ -218,6 +227,5 @@
     
     <script src="js/custom.js"></script>
 
-     
   </body>
 </html>

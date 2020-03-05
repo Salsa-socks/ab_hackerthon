@@ -1,0 +1,92 @@
+html, body {
+    margin: 0px;
+    overflow: inherit;
+}
+
+.navBar {
+    display: flex;
+    background-color: #002b60;
+    height: 90px;
+    margin: 0;
+}
+
+.ab_logo {
+    width: 40%;
+}
+
+.mobile-menu-body {
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    position: relative;
+    padding: 0 20px 20px 20px;
+    height: calc(100vh - 52px);
+    padding-bottom: 150px;
+}
+.mobile-side-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side-menu-links a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.side-menu-links a:hover {
+    background-color: #89ba16;
+    color: whitesmoke;
+    margin: 0px;
+  }
+  
+.signup-btn {
+    background-color: #89ba16;
+    border: none;
+    border-radius: 4px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.sendmsg-btn {
+    background-color: #002b60;
+    border: none;
+    border-radius: 4px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.scoreboard-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #89ba16;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+    -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+
+@media (max-width: 767.98px)
+{
+    .navBar {
+        min-width:400px;
+        display: flex;
+        background-color: #002b60;
+        height: 70px;
+        margin: 0;
+    }
+    .ab_logo {
+        min-width: -webkit-fill-available;
+    }
+    .signup-btn {
+        display: none;
+}
