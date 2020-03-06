@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>scoreboard</title>
+    <link rel="shortcut icon" href="favicon.ico">
     <link rel="shortcut icon" href="ftco-32x32.png">
     
     <link rel="stylesheet" href="css/custom-bs.css">
@@ -34,7 +35,6 @@
           <ul class="mobile-side-menu">
             <li class="side-menu-links"><a href="index.html">Home</a></li>
             <li class="side-menu-links"><a href="challenges.html">Challenges</a></li>
-            <li class="side-menu-links"><a href="contact.html">Contact</a></li>
             <li class="side-menu-links"><a href="scoreboard.php">Scoreboard</a></li>
             <li class="side-menu-links"><a href="register.php">Sign Up</a></li>
           </ul>
@@ -59,9 +59,9 @@
 
               <nav class="mx-auto site-navigation">
                 <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                  <li><a href="index.html" class="nav-link active">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="challenges.html">Challenges</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="register.php">Sign Up</a></li>
                   <!-- <li><a href="about.html">About</a></li> -->
                   <li class="d-lg-none"><a href="scoreboard.php"><span class="mr-2"></span>Scoreboard</a></li>
                   <li class="d-lg-none"><a href="register.php"><span class="mr-2"></span>Sign Up</a></li>
@@ -83,20 +83,30 @@
       <!-- END OF NAVBAR -->
   
       <!-- HOME -->
-      <section class="section-hero overlay inner-page bg-image overlay-primary" style="background-image: url('images/hero_1.jpg');" id="home-section">
+      <section class="py-5 bg-image overlay-primary fixed overlay" id="next" style="background-image: url('images/hero_1.jpg');">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-7 text-center">
+              <h2 class="section-title mb-2 text-white">Team Scoreboard</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="site-section" id="home-section">
         <div class="container">
           <div class="row mb-5 justify-content-center">
             <div class="col-md-7">
-                <div class="p-5 mb-3 bg-white" style="min-height:300px;min-width:500px; border-radius: 6px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
-                  <div class="container" id="live_score"></div>
-                </div>
+              <div class="p-5 mb-3 bg-white" style="min-height:300px;min-width:500px; border-radius: 6px;box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);">
+                <div class="container" id="live_score" style="margin-bottom: 20px;"></div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       <!-- FOOTER -->
-      <footer class="site-footer">   
+      <!-- <footer class="site-footer">   
         <a href="#top" class="smoothscroll scroll-top">
           <span class="icon-keyboard_arrow_up"></span>
         </a>
@@ -107,7 +117,7 @@
             </div>
           </div>
         </div>
-      </footer>
+      </footer> -->
       <!-- END OF FOOTER -->
     </div>
     <!-- SCRIPTS -->    
@@ -124,7 +134,7 @@
     
     <script src="js/bootstrap-select.min.js"></script>
     
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="js/jquery-3.4.1.min.js"></script> 
     <script type="text/javascript">
           $(document).ready( function(){
               $('#live_score').load('live_score.php');
@@ -135,7 +145,7 @@
           {
               setTimeout( function() {
               $('#live_score').load('live_score.php');
-              refresh(); }, 2000);
+              refresh(); }, 1500);
           }
       </script>
 

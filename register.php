@@ -41,7 +41,6 @@ session_start();
           <ul class="mobile-side-menu">
             <li class="side-menu-links"><a href="index.html">Home</a></li>
             <li class="side-menu-links"><a href="challenges.html">Challenges</a></li>
-            <li class="side-menu-links"><a href="contact.html">Contact</a></li>
             <li class="side-menu-links"><a href="scoreboard.php">Scoreboard</a></li>
             <li class="side-menu-links"><a href="register.php">Sign Up</a></li>
           </ul>
@@ -66,9 +65,9 @@ session_start();
 
               <nav class="mx-auto site-navigation">
                 <ul class="site-menu js-clone-nav d-none d-xl-block ml-0 pl-0">
-                  <li><a href="index.html" class="nav-link active">Home</a></li>
+                  <li><a href="index.html">Home</a></li>
                   <li><a href="challenges.html">Challenges</a></li>
-                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="register.php" class="nav-link active">Sign Up</a></li>
                   <!-- <li><a href="about.html">About</a></li> -->
                   <li class="d-lg-none"><a href="scoreboard.php"><span class="mr-2"></span>Scoreboard</a></li>
                   <li class="d-lg-none"><a href="register.php"><span class="mr-2"></span>Sign Up</a></li>
